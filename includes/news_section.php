@@ -35,7 +35,7 @@
                 const dateParts = post.date.split(' ')[0].split('-'); 
                 const formattedDate = `${dateParts[2]}.${dateParts[1]}.${dateParts[0]}`;
                 postElement.className = 'post';
-                postElement.innerHTML = `<div class="post__date">${formattedDate}</div><h2 class="post__title">${post.title}</h2>${post.announce}<a class="post__more-info" href="http://test/news.php?post=${post.id}">Подробнее <img src="../images/assets/Arrow.png" style="transition: background 0.3s, color 0.3s;"></a>`;
+                postElement.innerHTML = `<div class="post__info"><div class="post__date">${formattedDate}</div><h2 class="post__title">${post.title}</h2>${post.announce}</div><a class="post__more-info" href="http://test/news.php?post=${post.id}">Подробнее <img src="../images/assets/Arrow.png" style="transition: background 0.3s, color 0.3s;"></a>`;
                 postsContainer.appendChild(postElement);
             });
 

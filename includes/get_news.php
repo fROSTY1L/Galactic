@@ -22,7 +22,7 @@ try {
 
     $offset = ($currentPage - 1) * $newsPerPage;
 
-    $stmt = $pdo->prepare("SELECT * FROM news LIMIT :offset, :limit");
+    $stmt = $pdo->prepare("SELECT * FROM news ORDER BY date DESC LIMIT :offset, :limit");
     $stmt->bindValue(':offset', $offset, PDO::PARAM_INT);
     $stmt->bindValue(':limit', $newsPerPage, PDO::PARAM_INT);
     $stmt->execute();

@@ -10,7 +10,7 @@
         <div class="banner__content">
             <h1 id="banner__title">Загрузка...</h1>
             <p id="banner__description">Пожалуйста, подождите...</p>
-            <img src="test/get_images.php?image=0cdfb0183c985bea52e35b50e99f0909.jpg" alt="" id="news_image">
+            <img src="" alt="" id="news_image">
         </div>
     </section>
 
